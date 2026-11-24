@@ -13,7 +13,7 @@ export type PackageStatus =
     'CUSTOMS_CLEARANCE' |
     'READY_FOR_PICKUP' |
     'DELIVERED' |
-    'CANCELLED';
+    'CANCELED';
 export interface QuoteResponse{
     billableWeight: number;
     fobValue: number;
@@ -70,7 +70,7 @@ export const STATUS_LABELS: Record<PackageStatus, string> = {
     CUSTOMS_CLEARANCE: 'En proceso aduanal',
     READY_FOR_PICKUP: 'Listo para retirar',
     DELIVERED: 'Entregado',
-    CANCELLED: 'Cancelado',
+    CANCELED: 'Cancelado',
 };
 export interface QuoteRequest{
     weightInLbs: number;

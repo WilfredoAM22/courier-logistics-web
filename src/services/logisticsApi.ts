@@ -7,11 +7,11 @@ import type {
     UpdateStatusRequest,
 } from '../types/logistics';
 
-const API_BASE_URL = import.meta.env.VITE_API_URL ??'http://localhost:8080/api/v1';
+const API_BASE_URL = import.meta.env.VITE_API_URL ?? 'http://localhost:8080/api/v1';
 
 export class LogisticsApiError extends Error {
     status: string;
-    errors?: Record<string, string>
+    errors?: Record<string, string>;
 
     constructor(
         message: string,
@@ -27,11 +27,11 @@ export class LogisticsApiError extends Error {
 
 async function request<T>(endpoint: string, options?: RequestInit): Promise<T> {
     const response = await fetch(`${API_BASE_URL}${endpoint}`, {
+        ...options,
         headers: {
             'Content-Type': 'application/json',
             ...options?.headers,
         },
-        ...options,
     });
 
     if (!response.ok) {
@@ -52,15 +52,41 @@ async function request<T>(endpoint: string, options?: RequestInit): Promise<T> {
 
     return response.json() as Promise<T>;
 }
+
 export function calculateQuote(payload: QuoteRequest): Promise<QuoteResponse> {
-    return request<ShipmentTrackingResponse>
-    ('/shipments', { method: 'POST', body: JSON.stringify(payload) });
-
-
+    return request<QuoteResponse>('/quotes', {
+        method: 'POST',
+        body: JSON.stringify(payload),
+    });
 }
+
 export function updateShipmentStatus(
     trackingNumber: string,
     payload: UpdateStatusRequest
 ): Promise<ShipmentTrackingResponse> {
-    return request<ShipmentTrackingResponse>
-    (`/shipments/${encodeURIComponent(trackingNumber.trim())}`);}
+    return request<ShipmentTrackingResponse>(
+        `/shipments/${encodeURIComponent(trackingNumber.trim())}/status`,
+        {
+            method: 'PATCH',
+            body: JSON.stringify(payload),
+        }
+    );
+}
+
+
+export function createShipment(
+    payload: CreateShipmentRequest
+): Promise<ShipmentTrackingResponse> {
+    return request<ShipmentTrackingResponse>('/shipments', {
+        method: 'POST',
+        body: JSON.stringify(payload),
+    });
+}
+
+export function getShipmentByTracking(
+    trackingNumber: string
+): Promise<ShipmentTrackingResponse> {
+    return request<ShipmentTrackingResponse>(
+        `/shipments/${encodeURIComponent(trackingNumber.trim())}`
+    );
+}
