@@ -1,9 +1,7 @@
-
 import {
     CheckCircle2,
     AlertTriangle,
     DollarSign,
-    Scale,
     Package,
     Plane,
     MapPin,
