@@ -27,7 +27,6 @@
     * Control de máquina de estados (`RECEIVED_MIAMI` → `IN_TRANSIT` → `CUSTOMS_CLEARANCE` → `READY_FOR_PICKUP` → `DELIVERED`) con alertas visuales ante transiciones ilegales (`409 Conflict`).
 
 ---
-
 ## Capturas de Pantalla
 
 ### 1. Calculadora Aduanal DGA (Decreto 402-05)
@@ -35,16 +34,14 @@ Comparativa entre un envío exento de impuestos (≤ US\$ 200.00 FOB) y un enví
 
 | Envío Exento (`≤ US$ 200.00 FOB`) | Envío Gravado (`> US$ 200.00 FOB`) |
 | :---: | :---: |
-| ![Cotizador Exento](docs/cotizador-exento.png) | ![Cotizador Gravado](docs/cotizador-gravado.png) |
+| ![Cotizador Exento](src/assets/cotizador-exento.png) | ![Cotizador Gravado](src/assets/cotizador-gravado.png) |
 
 ### 2. Gestión de Almacén, Tracking y Control de Estados
 Registro en Miami con tarifa congelada (*Total Congelado*), línea de tiempo cronológica y bloqueo de transiciones inválidas (`409 Conflict` al intentar cancelar un paquete ya entregado):
 
 | Registro y Tracking Inicial | Historial Completo y Alerta `409 Conflict` |
 | :---: | :---: |
-| ![Registro y Tracking](docs/registro-miami.png) | ![Historial y Error 409](docs/rastreo-conflicto.png) |
-
----
+| ![Registro y Tracking](src/assets/registro-miami.png) | ![Historial y Error 409](src/assets/rastreo-conflicto.png) |
 
 ## Endpoints de la API
 
