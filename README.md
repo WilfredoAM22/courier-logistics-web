@@ -116,5 +116,4 @@ src/
 
 ## Autor
 
-**Wilfredo Alexis**  
-[![GitHub](https://shields.io)](https://github.com)
+**Wilfredo Alexis** 
