@@ -4,11 +4,11 @@
 
 **Simulador de liquidación aduanal (Decreto 402-05) y rastreo logístico en tiempo real para la ruta Miami (MIA) → Santo Domingo / La Romana (SDQ / LRM).**
 
-[![React](https://shields.io)](https://react.dev)
-[![TypeScript](https://shields.io)](https://typescriptlang.org)
-[![Tailwind CSS](https://shields.io)](https://tailwindcss.com)
-[![Vite](https://shields.io)](https://vitejs.dev)
-[![Status](https://shields.io)](#)
+[![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)](https://react.dev)
+[![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white)](https://typescriptlang.org)
+[![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white)](https://tailwindcss.com)
+[![Vite](https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=vite&logoColor=white)](https://vitejs.dev)
+[![Estado](https://img.shields.io/badge/Estado-En_desarrollo-f59e0b?style=for-the-badge)](#)
 
 [Backend API REST](https://github.com) • [Funcionalidades](#funcionalidades-principales) • [Capturas](#capturas-de-pantalla) • [Endpoints](#endpoints-de-la-api) • [Tecnologías](#tecnologías) • [Instalación](#instalación-y-ejecución-local)
 
