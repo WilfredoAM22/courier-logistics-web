@@ -4,11 +4,13 @@
 
 **Simulador de liquidación aduanal (Decreto 402-05) y rastreo logístico en tiempo real para la ruta Miami (MIA) → Santo Domingo / La Romana (SDQ / LRM).**
 
-[![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)](https://react.dev)
-[![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white)](https://typescriptlang.org)
-[![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white)](https://tailwindcss.com)
-[![Vite](https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=vite&logoColor=white)](https://vitejs.dev)
-[![Estado](https://img.shields.io/badge/Estado-En_desarrollo-f59e0b?style=for-the-badge)](#)
+
+[![React](https://img.shields.io/badge/React-Framework-61DAFB?logo=react&logoColor=white)](https://react.dev)
+[![TypeScript](https://img.shields.io/badge/TypeScript-Language-3178C6?logo=typescript&logoColor=white)](https://www.typescriptlang.org)
+[![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-CSS_Framework-06B6D4?logo=tailwindcss&logoColor=white)](https://tailwindcss.com)
+[![Vite](https://img.shields.io/badge/Vite-Build_Tool-646CFF?logo=vite&logoColor=white)](https://vite.dev)
+[![Status](https://img.shields.io/badge/Status-Active-success)](#)
+
 
 [Backend API REST](https://github.com) • [Funcionalidades](#funcionalidades-principales) • [Capturas](#capturas-de-pantalla) • [Endpoints](#endpoints-de-la-api) • [Tecnologías](#tecnologías) • [Instalación](#instalación-y-ejecución-local)
 
@@ -116,4 +118,5 @@ src/
 
 ## Autor
 
-**Wilfredo Alexis** 
+**Wilfredo Alexis**  
+[![GitHub](https://shields.io)](https://github.com)
